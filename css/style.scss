@@ -1,0 +1,67 @@
+$width: 100%;
+
+
+
+.projects
+{
+    .gallary
+    {
+        width: $width;
+        .project
+        {
+            width: $width / 4;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            float: left;
+            position: relative;
+            
+            @media(max-width: 992px)
+            {
+                width: $width / 2 ;    
+            }
+            @media(max-width: 768px)
+            {
+                width: $width ;    
+            }
+
+            img
+            {
+                width: $width;
+            }
+
+            .descriptionpro
+            {
+                display: table;
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.664);
+                height: 100%;
+                width: $width;
+                opacity: 0;
+
+                &:hover
+                {
+                    opacity: 1;
+                    transition: all .5s ease-in-out;
+                }
+
+                span
+                {
+                    display: block;
+                   font-size: 2.5vw;
+                }
+                
+                p
+                {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+

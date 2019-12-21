@@ -1,0 +1,50 @@
+.projects .gallary {
+  width: 100%;
+}
+.projects .gallary .project {
+  width: 25%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  float: left;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .projects .gallary .project {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .projects .gallary .project {
+    width: 100%;
+  }
+}
+.projects .gallary .project img {
+  width: 100%;
+}
+.projects .gallary .project .descriptionpro {
+  display: table;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.664);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.projects .gallary .project .descriptionpro:hover {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.projects .gallary .project .descriptionpro span {
+  display: block;
+  font-size: 2.5vw;
+}
+.projects .gallary .project .descriptionpro p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=style.css.map */
